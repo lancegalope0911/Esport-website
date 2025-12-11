@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Schedules - Esports Analytics Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teachers:wght@400;500;700;800&family=ABeeZee:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Texture -->
+  <div class="bg-texture"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo" id="logoBtn">
+        <a href="index.html">
+          <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.64 0H58V59H3.64L0 29.5L3.64 0Z" fill="#FF005E"/>
+            <path d="M0 0H54.36V59H0V0Z" fill="#D9D9D9"/>
+          </svg>
+        </a>
+      </div>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="news.html" class="nav-link">NEWS</a>
+        <a href="schedules.html" class="nav-link active">SCHEDULES</a>
+        <a href="teams.html" class="nav-link">TEAMS</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#" class="nav-link" id="loginBtn">LOGIN</a>
+        <a href="#" class="nav-link" id="signupBtn">SIGN UP</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Schedules Section -->
+    <section id="schedules" class="schedules-section">
+      <h2 class="section-title">CHAMPIONS 2026 SCHEDULES</h2>
+      <div class="schedules-container">
+        <div class="schedule-tabs">
+          <button class="schedule-tab active" data-tab="live">Live Matches</button>
+          <button class="schedule-tab" data-tab="upcoming">Upcoming</button>
+          <button class="schedule-tab" data-tab="past">Past Matches</button>
+        </div>
+        <div class="schedule-content">
+          <div class="schedule-tab-content active" id="liveMatches">
+            <div class="match-card" data-match-id="1">
+              <div class="match-header">
+                <span class="match-status live">LIVE</span>
+                <span class="match-tournament">ESL Challenger League Season 44 Europe</span>
+              </div>
+              <div class="match-teams">
+                <div class="team" data-team="team-vitality">
+                  <img src="assets/news_card_1.png" alt="Team 1">
+                  <span>Team Vitality</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team" data-team="faze-clan">
+                  <img src="assets/news_card_2.png" alt="Team 2">
+                  <span>FaZe Clan</span>
+                </div>
+              </div>
+              <div class="match-score">
+                <span>6</span>
+                <span>6</span>
+              </div>
+              <button class="match-summary-btn">View Match Summary</button>
+              <div class="match-summary" style="display: none;">
+                <div class="summary-content">
+                  <h3>Match Summary</h3>
+                  <div class="summary-stats">
+                    <div class="stat-item">
+                      <span class="stat-label">Map 1:</span>
+                      <span class="stat-value">Dust2 - Team Vitality 16-14</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Map 2:</span>
+                      <span class="stat-value">Mirage - FaZe Clan 16-12</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Map 3:</span>
+                      <span class="stat-value">Inferno - Ongoing</span>
+                    </div>
+                  </div>
+                  <div class="summary-players">
+                    <h4>Top Performers</h4>
+                    <div class="player-stats-grid">
+                      <div class="player-stat">
+                        <span>ZywOo (VIT)</span>
+                        <span>28 K / 15 D</span>
+                      </div>
+                      <div class="player-stat">
+                        <span>karrigan (FaZe)</span>
+                        <span>24 K / 18 D</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="match-card" data-match-id="4">
+              <div class="match-header">
+                <span class="match-status live">LIVE</span>
+                <span class="match-tournament">VALORANT Champions Tour 2025</span>
+              </div>
+              <div class="match-teams">
+                <div class="team" data-team="team-heretics">
+                  <img src="assets/hero_1.png" alt="Team 1">
+                  <span>Team Heretics</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team" data-team="faze-clan">
+                  <img src="assets/hero_2.png" alt="Team 2">
+                  <span>Fnatic</span>
+                </div>
+              </div>
+              <div class="match-score">
+                <span>13</span>
+                <span>10</span>
+              </div>
+              <button class="match-summary-btn">View Match Summary</button>
+              <div class="match-summary" style="display: none;">
+                <div class="summary-content">
+                  <h3>Match Summary</h3>
+                  <div class="summary-stats">
+                    <div class="stat-item">
+                      <span class="stat-label">Map 1:</span>
+                      <span class="stat-value">Bind - Team Heretics 13-10</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Map 2:</span>
+                      <span class="stat-value">Haven - Ongoing</span>
+                    </div>
+                  </div>
+                  <div class="summary-players">
+                    <h4>Top Performers</h4>
+                    <div class="player-stats-grid">
+                      <div class="player-stat">
+                        <span>woot (TH)</span>
+                        <span>18 K / 12 D</span>
+                      </div>
+                      <div class="player-stat">
+                        <span>Derke (FNC)</span>
+                        <span>15 K / 14 D</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-tab-content" id="upcomingMatches">
+            <div class="match-card" data-match-id="2">
+              <div class="match-header">
+                <span class="match-status upcoming">UPCOMING</span>
+                <span class="match-tournament">ESL Challenger League Season 44 Europe</span>
+              </div>
+              <div class="match-teams">
+                <div class="team" data-team="team-a">
+                  <img src="assets/news_card_3.png" alt="Team 1">
+                  <span>Team A</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team" data-team="team-b">
+                  <img src="assets/news_card_4.png" alt="Team 2">
+                  <span>Team B</span>
+                </div>
+              </div>
+              <div class="match-time">Dec 15, 2025 • 7:00 PM</div>
+              <button class="match-summary-btn">View Match Details</button>
+              <div class="match-summary" style="display: none;">
+                <div class="summary-content">
+                  <h3>Match Preview</h3>
+                  <p>This match will feature best-of-three format. Both teams have been performing well in recent tournaments.</p>
+                  <div class="summary-stats">
+                    <div class="stat-item">
+                      <span class="stat-label">Format:</span>
+                      <span class="stat-value">Best of 3</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Prize Pool:</span>
+                      <span class="stat-value">$50,000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="match-card" data-match-id="5">
+              <div class="match-header">
+                <span class="match-status upcoming">UPCOMING</span>
+                <span class="match-tournament">League of Legends World Championship</span>
+              </div>
+              <div class="match-teams">
+                <div class="team" data-team="gen-g">
+                  <img src="assets/news_card_1.png" alt="Team 1">
+                  <span>Gen.G</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team" data-team="faze-clan">
+                  <img src="assets/news_card_2.png" alt="Team 2">
+                  <span>T1</span>
+                </div>
+              </div>
+              <div class="match-time">Dec 20, 2025 • 3:00 PM</div>
+              <button class="match-summary-btn">View Match Details</button>
+              <div class="match-summary" style="display: none;">
+                <div class="summary-content">
+                  <h3>Match Preview</h3>
+                  <p>This highly anticipated match features two of Korea's best teams. Gen.G and T1 have a long-standing rivalry in the LCK. This best-of-five series will determine who advances to the finals.</p>
+                  <div class="summary-stats">
+                    <div class="stat-item">
+                      <span class="stat-label">Format:</span>
+                      <span class="stat-value">Best of 5</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Prize Pool:</span>
+                      <span class="stat-value">$2,225,000</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Venue:</span>
+                      <span class="stat-value">O2 Arena, London</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-tab-content" id="pastMatches">
+            <div class="match-card" data-match-id="3">
+              <div class="match-header">
+                <span class="match-status past">COMPLETED</span>
+                <span class="match-tournament">ESL Challenger League Season 44 Europe</span>
+              </div>
+              <div class="match-teams">
+                <div class="team" data-team="team-x">
+                  <img src="assets/hero_1.png" alt="Team 1">
+                  <span>Team X</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team" data-team="team-y">
+                  <img src="assets/hero_2.png" alt="Team 2">
+                  <span>Team Y</span>
+                </div>
+              </div>
+              <div class="match-score">
+                <span>2</span>
+                <span>1</span>
+              </div>
+              <button class="match-summary-btn">View Match Summary</button>
+              <div class="match-summary" style="display: none;">
+                <div class="summary-content">
+                  <h3>Match Summary</h3>
+                  <div class="summary-stats">
+                    <div class="stat-item">
+                      <span class="stat-label">Map 1:</span>
+                      <span class="stat-value">Dust2 - Team X 16-10</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Map 2:</span>
+                      <span class="stat-value">Mirage - Team Y 16-14</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Map 3:</span>
+                      <span class="stat-value">Inferno - Team X 16-12</span>
+                    </div>
+                  </div>
+                  <div class="summary-players">
+                    <h4>Top Performers</h4>
+                    <div class="player-stats-grid">
+                      <div class="player-stat">
+                        <span>Player1 (Team X)</span>
+                        <span>45 K / 32 D</span>
+                      </div>
+                      <div class="player-stat">
+                        <span>Player2 (Team Y)</span>
+                        <span>38 K / 35 D</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="match-mvp">
+                    <h4>MVP: Player1 (Team X)</h4>
+                    <p>Outstanding performance with 1.41 rating</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="match-card" data-match-id="6">
+              <div class="match-header">
+                <span class="match-status past">COMPLETED</span>
+                <span class="match-tournament">Rocket League Championship Series</span>
+              </div>
+              <div class="match-teams">
+                <div class="team" data-team="team-heretics">
+                  <img src="assets/hero_3.png" alt="Team 1">
+                  <span>Karmine Corp</span>
+                </div>
+                <span class="vs">VS</span>
+                <div class="team" data-team="faze-clan">
+                  <img src="assets/news_card_4.png" alt="Team 2">
+                  <span>Team Liquid</span>
+                </div>
+              </div>
+              <div class="match-score">
+                <span>4</span>
+                <span>2</span>
+              </div>
+              <button class="match-summary-btn">View Match Summary</button>
+              <div class="match-summary" style="display: none;">
+                <div class="summary-content">
+                  <h3>Match Summary</h3>
+                  <div class="summary-stats">
+                    <div class="stat-item">
+                      <span class="stat-label">Game 1:</span>
+                      <span class="stat-value">Karmine Corp 3-1</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Game 2:</span>
+                      <span class="stat-value">Team Liquid 2-1</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Game 3:</span>
+                      <span class="stat-value">Karmine Corp 4-2</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Game 4:</span>
+                      <span class="stat-value">Karmine Corp 3-1</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Game 5:</span>
+                      <span class="stat-value">Team Liquid 2-1</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-label">Game 6:</span>
+                      <span class="stat-value">Karmine Corp 3-2</span>
+                    </div>
+                  </div>
+                  <div class="summary-players">
+                    <h4>Top Performers</h4>
+                    <div class="player-stats-grid">
+                      <div class="player-stat">
+                        <span>Vatira (KC)</span>
+                        <span>12 Goals / 8 Assists</span>
+                      </div>
+                      <div class="player-stat">
+                        <span>Atow (TL)</span>
+                        <span>10 Goals / 6 Assists</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="match-mvp">
+                    <h4>MVP: Vatira (Karmine Corp)</h4>
+                    <p>Outstanding performance with 12 goals and 8 assists</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>LOGIN</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="student@student.edu.tsu.ph" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-options">
+          <a href="#" class="forgot-password">Forgot your password?</a>
+        </div>
+        <button type="submit" class="btn-primary">SIGN IN</button>
+        <p class="form-switch">New user? <a href="#" id="switchToSignup">Sign up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>CREATE A NEW ACCOUNT</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="student@student.edu.tsu.ph" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label>Repeat Password</label>
+          <input type="password" placeholder="Repeat your password" required>
+        </div>
+        <button type="submit" class="btn-primary">SIGN UP</button>
+        <p class="form-switch">Already have an account? <a href="#" id="switchToLogin">Sign in</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-line"></div>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="#" data-action="guides">Guides</a></li>
+            <li><a href="#" data-action="faq">F.A.Q</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#" data-action="terms">Terms of service</a></li>
+            <li><a href="#" data-action="privacy">Privacy policy</a></li>
+            <li><a href="#" data-action="feedback">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact us</h4>
+          <p><a href="mailto:Support@mail.com">Support@mail.com</a></p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">TW</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 logo Inc. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer-accent"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

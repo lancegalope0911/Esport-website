@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Team Details - Esports Analytics Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teachers:wght@400;500;700;800&family=ABeeZee:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Texture -->
+  <div class="bg-texture"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo" id="logoBtn">
+        <a href="index.html">
+          <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.64 0H58V59H3.64L0 29.5L3.64 0Z" fill="#FF005E"/>
+            <path d="M0 0H54.36V59H0V0Z" fill="#D9D9D9"/>
+          </svg>
+        </a>
+      </div>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="news.html" class="nav-link">NEWS</a>
+        <a href="schedules.html" class="nav-link">SCHEDULES</a>
+        <a href="teams.html" class="nav-link active">TEAMS</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#" class="nav-link" id="loginBtn">LOGIN</a>
+        <a href="#" class="nav-link" id="signupBtn">SIGN UP</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="team-detail-section">
+      <div class="team-header" id="teamHeader">
+        <!-- Team header will be populated by JavaScript -->
+      </div>
+      
+      <div class="team-tabs">
+        <button class="team-tab active" data-tab="summary">Summary</button>
+        <button class="team-tab" data-tab="achievements">Achievements</button>
+        <button class="team-tab" data-tab="roster">Roster</button>
+        <button class="team-tab" data-tab="gallery">Gallery</button>
+      </div>
+      
+      <div class="team-content">
+        <div class="team-tab-content active" id="summaryTab">
+          <div class="team-summary" id="teamSummary">
+            <!-- Summary content will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <div class="team-tab-content" id="achievementsTab">
+          <div class="team-achievements" id="teamAchievements">
+            <!-- Achievements will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <div class="team-tab-content" id="rosterTab">
+          <div class="team-roster" id="teamRoster">
+            <!-- Roster will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <div class="team-tab-content" id="galleryTab">
+          <div class="team-gallery" id="teamGallery">
+            <!-- Gallery will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>LOGIN</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="student@student.edu.tsu.ph" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-options">
+          <a href="#" class="forgot-password">Forgot your password?</a>
+        </div>
+        <button type="submit" class="btn-primary">SIGN IN</button>
+        <p class="form-switch">New user? <a href="#" id="switchToSignup">Sign up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>CREATE A NEW ACCOUNT</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="student@student.edu.tsu.ph" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label>Repeat Password</label>
+          <input type="password" placeholder="Repeat your password" required>
+        </div>
+        <button type="submit" class="btn-primary">SIGN UP</button>
+        <p class="form-switch">Already have an account? <a href="#" id="switchToLogin">Sign in</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-line"></div>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="#" data-action="guides">Guides</a></li>
+            <li><a href="#" data-action="faq">F.A.Q</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#" data-action="terms">Terms of service</a></li>
+            <li><a href="#" data-action="privacy">Privacy policy</a></li>
+            <li><a href="#" data-action="feedback">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact us</h4>
+          <p><a href="mailto:Support@mail.com">Support@mail.com</a></p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">TW</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 logo Inc. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer-accent"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
